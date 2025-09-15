@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <DebugType>none</DebugType>
+    <PublishAot>true</PublishAot>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <DebuggerSupport>false</DebuggerSupport>
+    <StackTraceSupport>false</StackTraceSupport>
+    <OptimizationPreference>Speed</OptimizationPreference>
+    <IlcGenerateWin32Resources>false</IlcGenerateWin32Resources>
+  </PropertyGroup>
+</Project>

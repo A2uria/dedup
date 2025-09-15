@@ -1,0 +1,12 @@
+<Project>
+  <Target Name="AfterSetupOSSpecificProps" AfterTargets="SetupOSSpecificProps" Condition="'$(_targetOS)' == 'win'">
+    <PropertyGroup>
+      <CppLinker>lld-link</CppLinker>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <LinkerArg Include="-Brepro" />
+      <LinkerArg Include="-merge:_RDATA=.rdata" />
+    </ItemGroup>
+  </Target>
+</Project>
